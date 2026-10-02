@@ -1,0 +1,23 @@
+.DS_Store
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+data/*.mat
+data/*.pkl
+results/feature_table.csv
+results/feature_table_paper_aligned.csv
+results/paper_aligned/
+results/*.joblib
+
+# Raw datasets and local research materials; keep these out of the public repo.
+*.mat
+*.pdf
+*.pptx
+*.zip
+paper_reproduction/
+reports/implementation_audit.md
+data-driven-prediction-of-battery-cycle-life-before-capacity-degradation/
+day1_ppt_images/
+30-ESSHealth-*.ipynb

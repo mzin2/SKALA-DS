@@ -1,0 +1,36 @@
+{
+  "selected_model": "Day1_RandomForest",
+  "selected_feature_set": "Day1_base6",
+  "selected_parameters": {
+    "model__max_depth": 4,
+    "model__max_features": 1.0,
+    "model__min_samples_leaf": 3
+  },
+  "features": [
+    "dq_log_variance",
+    "early_QD_mean",
+    "early_QD_slope",
+    "early_IR_mean",
+    "early_Tavg_mean",
+    "charge_C_mean"
+  ],
+  "model_selection": "lowest Batch 1 policy-group holdout MAPE; ties use nested grouped-CV MAPE",
+  "hyperparameter_tuning_objective": "mean squared error on each candidate's training target scale",
+  "target_scale": "raw",
+  "reported_prediction_unit": "cycle_life in cycles",
+  "split": {
+    "training": "Batch 1 (2017-05-12)",
+    "validation": "20% policy-group holdout within Batch 1",
+    "test": "Batch 2",
+    "additional_test": "Batch 3",
+    "random_seed": 42
+  },
+  "validation_policies": [
+    "3.6C(80%)-3.6C",
+    "5.4C(60%)-3C",
+    "5.4C(70%)-3C",
+    "6C(50%)-3C",
+    "7C(30%)-3.6C"
+  ],
+  "paper_mape_reference_pct": 9.1
+}
